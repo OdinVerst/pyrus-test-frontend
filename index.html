@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shower Presentation Engine</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+    </style>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>Тестирование frontend</h1>
+        <p>Сергей Раздолянский, Pyrus</p>
+    </header>
+
+    <section class="slide slide--not-top slide--fl-center not-num">
+        <h1 class="title title__main title__big separate">Тестирование frontend</h1>
+        <p>или как уменьшить чувство боли</p>
+        <div class="sr-main">
+            <img src="img/frontpoter.svg" alt="">
+            <span>Сергей Раздолянский <br> @frontpoterashka</span>
+        </div>
+        <div class="pyrus">
+            <img src="img/pyrus.svg" alt="">
+        </div>
+    </section>
+
+    <section class="slide">
+        <h1>О чем сегодня поговорим?</h1>
+        <ul>
+            <li class="next">Какие бывают тесты</li>
+            <li class="next">Что есть в Pyrus по тестам</li>
+            <li class="next">Новые integrations test</li>
+            <li class="next">Планы развития</li>
+        </ul>
+    </section>
+
+    <section class="slide  slide--fl-center">
+        <h1 class="title separate">Пирамида тестирования</h1>
+    </section>
+
+
+    <section class="slide slide--fl-center">
+        <style>
+            .triangle__item {
+                position: absolute;
+                left: 50%;
+                z-index: 2;
+                transform: translateX(-50%);
+                height: 33%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+            }
+
+            .tra::after {
+                position: absolute;
+                content: '';
+                bottom: 0;
+                left: 50%;
+                width: 0;
+                height: 0;
+                border-left: 150px solid transparent;
+                border-right: 150px solid transparent;
+                border-bottom: 300px solid gray;
+                z-index: -1;
+            }
+
+            .triangle {
+                position: relative;
+                width: 300px;
+                height: 300px;
+            }
+
+            .triangle::after {
+                transform: translateX(-50%);
+            }
+
+            .unit {
+                bottom: 0;
+            }
+
+            .unit::after {
+                transform: translateX(-50%);
+                border-bottom-color: green;
+            }
+
+            .integration {
+                bottom: calc(100% / 3);
+            }
+
+            .integration::after {
+                transform: translate(-50%, calc(100% / 3));
+                border-bottom-color: red;
+            }
+
+            .e2e {
+                bottom: calc((100% / 3) * 2);
+                line-height: 2.8;
+                align-items: flex-end;
+            }
+
+            .e2e::after {
+                transform: translate(-50%, calc((100% / 3) * 2));
+                border-bottom-color: tomato;
+            }
+        </style>
+        <div class="triangle tra">
+            <div class="triangle__item tra unit next">Unit</div>
+            <div class="triangle__item tra integration next">Integration</div>
+            <div class="triangle__item tra e2e next">e2e</div>
+        </div>
+<!--        <div class="up next">Затраты на тест</div>-->
+<!--        <div class="down next">Скорость выполнения</div>-->
+
+    </section>
+
+
+    <footer class="badge">
+        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+    </footer>
+    <div class="progress"></div>
+    <script src="node_modules/@shower/core/dist/shower.js"></script>
+</body>
+</html>
