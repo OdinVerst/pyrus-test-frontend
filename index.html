@@ -160,6 +160,41 @@
         </div>
     </section>
 
+    <section class="slide slide--fl-center slide--not-top">
+        <table style="font-size: 0.8em">
+            <tbody><tr>
+                <th scope="col"></th>
+                <th>Unit</th>
+                <th>Integration</th>
+                <th>E2E</th>
+            </tr>
+            <tr>
+                <th scope="row">Цель</th>
+                <td>Модуль в изоляции</td>
+                <td>Группа модулей</td>
+                <td>Система в целом</td>
+            </tr>
+            <tr>
+                <th scope="row">Библиотеки</th>
+                <td>Jest/Jasmine</td>
+                <td>Testing library/Enzyme</td>
+                <td>TestCafe/Puppeteer</td>
+            </tr>
+            <tr>
+                <th scope="row">Скорость</th>
+                <td>✅</td>
+                <td>✅</td>
+                <td>⌛️</td>
+            </tr>
+            <tr>
+                <th scope="row">Выполнение в TC</th>
+                <td>Build</td>
+                <td>Build</td>
+                <td>GuiTests</td>
+            </tr>
+            </tbody></table>
+    </section>
+
     <section class="slide slide--not-top slide--fl-center">
         <style>
             .triangle__text {
@@ -198,13 +233,20 @@
        <iframe style="width: 100%" height="100%" src="https://codesandbox.io/s/jest-playground-1h63g0?file=/src/sum.js"></iframe>
     </section>
 
-    <section class="slide">
+    <section class="slide slide--not-top slide--fl-center">
         <h1 class="title title-slide separate">Полезные ссылки по jest</h1>
-        <ul>
-            <li>https://jestjs.io/ru/docs/api</li>
-            <li>https://www.youtube.com/watch?v=7r4xVDI2vho</li>
-        </ul>
     </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img class="img--full" style="max-height: 90%;" src="img/jest-docs.png" alt="">
+        <a style="margin-top: -30px; line-height: 1.2" class="common-href" href="https://jestjs.io/docs/getting-started">https://jestjs.io/docs/</a>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img class="img--full" style="max-height: 90%;" src="img/travis.webp" alt="">
+        <a style="margin-top: 7px; line-height: 1.2" class="common-href" href="https://www.youtube.com/watch?v=7r4xVDI2vho">https://www.youtube.com/watch?v=7r4xVDI2vho</a>
+    </section>
+
 
     <section class="slide slide--not-top slide--fl-center">
         <h1 class="title separate separate--pure">Jest в Pyrus</h1>
@@ -221,6 +263,15 @@
         </div>
     </section>
 
+    <section class="slide">
+        <h1 class="title title-slide separate">Integration tests</h1>
+        <div>
+            <p>В модульном тесте тестируется небольшой модуль или фрагмент кода приложения.</p>
+
+            <p>Интеграционные тесты требуют использования реальных зависимостей для выполнения тестирования, такого как тестирование других компонентов/библиотек, оборудования и т.</p>
+        </div>
+    </section>
+
     <section class="slide slide--not-top slide--fl-center">
         <div class="fl-bl-50" style="gap: 30px">
             <img style="margin: 0; width: 150px" class="img--50" src="img/jest.png" alt="">
@@ -231,6 +282,49 @@
 
     <section class="slide slide--not-top slide--fl-center">
         <h1 class="title separate separate--pure">Как запускать тесты?</h1>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <code>npm run jest</code>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img class="img--full" style="max-height: 90%;" src="img/test-run.png" alt="">
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <h1 class="title separate separate--pure">Как проверять coverage?</h1>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <code>jest <mark class="important">--coverage</mark></code>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img class="img--full" style="max-height: 90%;" src="img/coverage.png" alt="">
+        <div class="spotlight next" style="
+            --spotlight-radius: 50%;
+            --spotlight-opacity: 0.2;
+            --spotlight-size: 99px;
+            --spotlight-top: 45px;
+            --spotlight-left: -68px;
+        "></div>
+
+        <div class="spotlight next" style="
+            --spotlight-radius: 50%;
+            --spotlight-opacity: 0.2;
+            --spotlight-size: 99px;
+            --spotlight-top: 45px;
+            --spotlight-left: 168px;
+        "></div>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <h1 class="title separate separate--pure">Важно</h1>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img class="img--full" style="max-height: 90%;" src="img/ignore.png" alt="">
     </section>
 
     <section class="slide slide--not-top slide--fl-center">
@@ -248,7 +342,62 @@
         </div>
     </section>
 
+    <section class="slide">
+        <h1 class="title title-slide separate">E2E tests</h1>
+        <div>
+            <p>Сквозное тестирование, оно же End-to-end или E2E, — это процесс тестирования, при котором происходит подробная эмуляция пользовательской среды.</p>
+        </div>
+    </section>
 
+    <section class="slide slide--fl-center">
+        <img class="img--full" style="width: 250px; filter: drop-shadow(0 0px 6px black);"  src="img/e2e.png" alt="">
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <h1 class="title separate separate--pure">Новое</h1>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img class="img--full" style="max-height: 90%;" src="img/fail.png" alt="">
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img class="img--full" style="max-height: 90%;" src="img/mmock-flag.png" alt="">
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <h1 class="title separate separate--pure">Не тестируется другой кейс</h1>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img class="img--full" style="max-height: 90%;" src="img/utils.png" alt="">
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img class="img--full" style="max-height: 90%;" src="img/utils-2.png" alt="">
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <h1 class="title separate separate--pure">TestCafe в Pyrus</h1>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <h1 class="title separate separate--pure">Планы</h1>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img class="img--full" style="max-height: 90%;" src="img/lemurFace.png" alt="">
+        <a style="margin-top: 7px; line-height: 1.2" class="common-href" href="https://garris.github.io/BackstopJS/">BackstopJS</a>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img class="img--full" style="max-height: 90%;" src="img/BackstopJS.png" alt="">
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img class="img--full" style="max-height: 90%;" src="img/confwsd.png" alt="">
+        <a style="margin-top: 7px; line-height: 1.2" class="common-href" href="https://www.youtube.com/watch?v=qlj5ORCMhrA&t=6s">Найди 10 отличий, Людмила Мжачих</a>
+    </section>
 
     <footer class="badge">
         <a href="https://github.com/shower/shower">Fork me on GitHub</a>
