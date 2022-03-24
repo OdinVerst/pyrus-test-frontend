@@ -44,8 +44,8 @@
     <section class="slide">
         <style>
             .cir {
-                width: 250px;
-                height: 250px;
+                width: 230px;
+                height: 230px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -56,18 +56,18 @@
 
             .cir2 {
                 background: brown;
-                width: 230px;
-                height: 230px;
+                width: 270px;
+                height: 270px;
             }
         </style>
-        <h1>Неполезная статистика</h1>
+        <h1>Cтатистика багов (critical, blocker)</h1>
         <div class="fl-bl-50" style="text-align: center">
             <div>
                 <div class="cir">21</div>
                 2021
             </div>
             <div>
-                <div class="cir cir2">19</div>
+                <div class="cir cir2">24</div>
                 2022
             </div>
         </div>
@@ -276,6 +276,11 @@
     </section>
 
     <section class="slide slide--not-top slide--fl-center">
+        <img class="img--full" style="max-height: 80%;" src="img/tl-doc.png" alt="">
+        <a style="margin-top: -15px; line-height: 1.2" class="common-href" href="https://testing-library.com/docs/">testing library</a>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
         <h1 class="title separate separate--pure">Как запускать тесты?</h1>
     </section>
 
@@ -348,6 +353,12 @@
     </section>
 
     <section class="slide slide--not-top slide--fl-center">
+        <img class="img--full" style="max-height: 90%;" src="img/testcafe-doc.png" alt="">
+        <a style="margin-top: -30px; line-height: 1.2" class="common-href" href="https://testcafe.io/documentation/402635/getting-started">testcafe</a>
+    </section>
+
+
+    <section class="slide slide--not-top slide--fl-center">
         <h1 class="title separate separate--pure">Новое</h1>
     </section>
 
@@ -408,6 +419,37 @@
                 <td>GuiTests</td>
             </tr>
             </tbody></table>
+    </section>
+
+    <section class="slide">
+        <h1 class="title separate separate--pure">Unit</h1>
+        <ul>
+            <li>client/src/_Common/format/formatNumber.spec.ts</li>
+            <li>client/src/_Common/completionMatcher.spec.ts</li>
+            <li>client/src/_Common/parsing/parseTime.spec.ts</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h1 class="title separate separate--pure">Mobx Store</h1>
+        <ul>
+            <li>client/src/App/stores/ErrorSubpageStore.spec.ts</li>
+            <li>client/src/App/stores/profile/profileFormStore.spec.ts</li>
+        </ul>
+    </section>
+
+
+    <section class="slide">
+        <h1 class="title separate separate--pure">Integration</h1>
+        <ul>
+            <li>client/src/App/components/QuestionMenu/QuestionMenu.spec.tsx</li>
+        </ul>
+
+        <h1 class="title separate separate--pure">Gui tests</h1>
+        <ul>
+            <li>GuiTests/tests/calendar.ts</li>
+            <li>GuiTests/tests/register.ts</li>
+        </ul>
     </section>
 
     <section class="slide slide--not-top slide--fl-center">
