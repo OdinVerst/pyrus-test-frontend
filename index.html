@@ -41,10 +41,49 @@
         </ul>
     </section>
 
+    <section class="slide">
+        <style>
+            .cir {
+                width: 230px;
+                height: 230px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                background: tomato;
+                font-size: 45px;
+            }
+
+            .cir2 {
+                background: brown;
+                width: 270px;
+                height: 270px;
+            }
+        </style>
+        <h1>Cтатистика багов (critical, blocker)</h1>
+        <div class="fl-bl-50" style="text-align: center">
+            <div>
+                <div class="cir">21</div>
+                2021
+            </div>
+            <div>
+                <div class="cir cir2">24</div>
+                2022
+            </div>
+        </div>
+    </section>
+
+    <section class="slide slide--fl-center slide--not-top">
+        <h1 class="title title-slide separate">Sentry не показывает статистику за интервал 🤷‍</h1>
+    </section>
+
+    <section class="slide slide--fl-center">
+        <img class="img--full" style="width: 450px" src="img/mem-bag.jpeg" alt="">
+    </section>
+
     <section class="slide slide--not-top  slide--fl-center">
         <h1 class="title separate">Пирамида тестирования</h1>
     </section>
-
     <section class="slide slide--not-top slide--fl-center">
         <style>
             .triangle__item {
@@ -160,6 +199,193 @@
         </div>
     </section>
 
+    <section class="slide slide--not-top slide--fl-center">
+        <style>
+            .triangle__text {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                line-height: 340px;
+            }
+
+            .gr::after {
+                border-bottom-color: green;
+            }
+
+        </style>
+        <div class="cir" style="background-color: green">
+            Unit
+        </div>
+    </section>
+
+    <section class="slide">
+        <h1 class="title title-slide separate">Unit-тестирование</h1>
+        <div>
+            <p>Цель этого тестирования состоит в том, чтобы убедиться, что каждая единица программного кода работает должным образом.</p>
+        </div>
+    </section>
+
+    <section class="slide slide--fl-center">
+        <img class="img--full" style="width: 250px" src="img/jest.png" alt="">
+    </section>
+
+    <section class="slide" style="padding: 0">
+       <iframe style="width: 100%" height="100%" src="https://codesandbox.io/s/jest-playground-1h63g0?file=/src/sum.test.js"></iframe>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <h1 class="title title-slide separate">Полезные ссылки по jest</h1>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img class="img--full" style="max-height: 90%;" src="img/jest-docs.png" alt="">
+        <a style="margin-top: -30px; line-height: 1.2" class="common-href" href="https://jestjs.io/docs/getting-started">https://jestjs.io/docs/</a>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img class="img--full" style="max-height: 90%;" src="img/travis.webp" alt="">
+        <a style="margin-top: 7px; line-height: 1.2" class="common-href" href="https://www.youtube.com/watch?v=7r4xVDI2vho">https://www.youtube.com/watch?v=7r4xVDI2vho</a>
+    </section>
+
+
+    <section class="slide slide--not-top slide--fl-center">
+        <h1 class="title separate separate--pure">Jest в Pyrus</h1>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <div class="cir" style="background-color: red">
+            Integration
+        </div>
+    </section>
+
+    <section class="slide">
+        <h1 class="title title-slide separate">Интеграционное тестирование</h1>
+        <div>
+            <p>Интеграционные тесты требуют использования реальных зависимостей для выполнения тестирования, такого как тестирование других компонентов/библиотек, оборудования и т.</p>
+        </div>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <div class="fl-bl-50" style="gap: 30px">
+            <img style="margin: 0; width: 150px" class="img--50" src="img/jest.png" alt="">
+            <p style="font-size: 100px; margin: 0">+</p>
+            <img style="margin: 0; width: 150px" class="img--50" src="img/octopus-128x128.png" alt="">
+        </div>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img class="img--full" style="max-height: 80%;" src="img/tl-doc.png" alt="">
+        <a style="margin-top: -15px; line-height: 1.2" class="common-href" href="https://testing-library.com/docs/">testing library</a>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <h1 class="title separate separate--pure">Как запускать тесты?</h1>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <code>npm run jest</code>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img class="img--full" style="max-height: 90%;" src="img/test-run.png" alt="">
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <h1 class="title separate separate--pure">Как проверять coverage?</h1>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <code>jest <mark class="important">--coverage</mark></code>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <code>npm run jest:coverage</code>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img class="img--full" style="max-height: 90%;" src="img/coverage.png" alt="">
+        <div class="spotlight next" style="
+            --spotlight-radius: 50%;
+            --spotlight-opacity: 0.2;
+            --spotlight-size: 99px;
+            --spotlight-top: 56px;
+            --spotlight-left: 23px;
+        "></div>
+
+        <div class="spotlight next" style="
+            --spotlight-radius: 50%;
+            --spotlight-opacity: 0.2;
+            --spotlight-size: 99px;
+            --spotlight-top: 56px;
+            --spotlight-left: 310px;
+        "></div>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <h1 class="title separate separate--pure">Важно</h1>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img class="img--full" style="max-height: 90%;" src="img/ignore.png" alt="">
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <h1 class="title separate separate--pure">Testing Library в Pyrus</h1>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <div class="cir" style="background-color: tomato">
+            E2E
+        </div>
+    </section>
+
+    <section class="slide">
+        <h1 class="title title-slide separate">E2E тестирование</h1>
+        <div>
+            <p>Это процесс тестирования, при котором происходит подробная эмуляция пользовательской среды.</p>
+        </div>
+    </section>
+
+    <section class="slide slide--fl-center">
+        <img class="img--full" style="width: 250px; filter: drop-shadow(0 0px 6px whitesmoke);"  src="img/e2e.png" alt="">
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img class="img--full" style="max-height: 90%;" src="img/testcafe-doc.png" alt="">
+        <a style="margin-top: -30px; line-height: 1.2" class="common-href" href="https://testcafe.io/documentation/402635/getting-started">testcafe</a>
+    </section>
+
+
+    <section class="slide slide--not-top slide--fl-center">
+        <h1 class="title separate separate--pure">Новое</h1>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img class="img--full" style="max-height: 90%;" src="img/fail.png" alt="">
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img class="img--full" style="max-height: 90%;" src="img/mmock-flag.png" alt="">
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <h1 class="title separate separate--pure">Не тестируется другой кейс</h1>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img class="img--full" style="max-height: 90%;" src="img/utils.png" alt="">
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img class="img--full" style="max-height: 90%;" src="img/utils-2.png" alt="">
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <h1 class="title separate separate--pure">TestCafe в Pyrus</h1>
+    </section>
+
     <section class="slide slide--fl-center slide--not-top">
         <table style="font-size: 0.8em">
             <tbody><tr>
@@ -195,190 +421,35 @@
             </tbody></table>
     </section>
 
-    <section class="slide slide--not-top slide--fl-center">
-        <style>
-            .triangle__text {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                line-height: 340px;
-            }
-
-            .gr::after {
-                border-bottom-color: green;
-            }
-
-        </style>
-        <div class="triangle tra gr" >
-            <div class="triangle__text">Unit</div>
-        </div>
+    <section class="slide">
+        <h1 class="title separate separate--pure">Unit</h1>
+        <ul>
+            <li>client/src/_Common/format/formatNumber.spec.ts</li>
+            <li>client/src/_Common/completionMatcher.spec.ts</li>
+            <li>client/src/_Common/parsing/parseTime.spec.ts</li>
+        </ul>
     </section>
 
     <section class="slide">
-        <h1 class="title title-slide separate">Что такое Unit-тестирование</h1>
-        <div>
-            <p>Unit–тестирование еще часто называют модульным. Это тип тестирования программного обеспечения, при котором тестируются отдельные модули или компоненты программного обеспечения.</p>
-
-            <p>Цель этого тестирования состоит в том, чтобы убедиться, что каждая единица программного кода работает должным образом.</p>
-        </div>
+        <h1 class="title separate separate--pure">Mobx Store</h1>
+        <ul>
+            <li>client/src/App/stores/ErrorSubpageStore.spec.ts</li>
+            <li>client/src/App/stores/profile/profileFormStore.spec.ts</li>
+        </ul>
     </section>
 
-    <section class="slide slide--fl-center">
-        <img class="img--full" style="width: 250px" src="img/jest.png" alt="">
-    </section>
-
-    <section class="slide" style="padding: 0">
-       <iframe style="width: 100%" height="100%" src="https://codesandbox.io/s/jest-playground-1h63g0?file=/src/sum.js"></iframe>
-    </section>
-
-    <section class="slide slide--not-top slide--fl-center">
-        <h1 class="title title-slide separate">Полезные ссылки по jest</h1>
-    </section>
-
-    <section class="slide slide--not-top slide--fl-center">
-        <img class="img--full" style="max-height: 90%;" src="img/jest-docs.png" alt="">
-        <a style="margin-top: -30px; line-height: 1.2" class="common-href" href="https://jestjs.io/docs/getting-started">https://jestjs.io/docs/</a>
-    </section>
-
-    <section class="slide slide--not-top slide--fl-center">
-        <img class="img--full" style="max-height: 90%;" src="img/travis.webp" alt="">
-        <a style="margin-top: 7px; line-height: 1.2" class="common-href" href="https://www.youtube.com/watch?v=7r4xVDI2vho">https://www.youtube.com/watch?v=7r4xVDI2vho</a>
-    </section>
-
-
-    <section class="slide slide--not-top slide--fl-center">
-        <h1 class="title separate separate--pure">Jest в Pyrus</h1>
-    </section>
-
-    <section class="slide slide--not-top slide--fl-center">
-        <style>
-            .red::after {
-                border-bottom-color: red;
-            }
-        </style>
-        <div class="triangle tra red" >
-            <div class="triangle__text">Integration</div>
-        </div>
-    </section>
 
     <section class="slide">
-        <h1 class="title title-slide separate">Integration tests</h1>
-        <div>
-            <p>В модульном тесте тестируется небольшой модуль или фрагмент кода приложения.</p>
+        <h1 class="title separate separate--pure">Integration</h1>
+        <ul>
+            <li>client/src/App/components/QuestionMenu/QuestionMenu.spec.tsx</li>
+        </ul>
 
-            <p>Интеграционные тесты требуют использования реальных зависимостей для выполнения тестирования, такого как тестирование других компонентов/библиотек, оборудования и т.</p>
-        </div>
-    </section>
-
-    <section class="slide slide--not-top slide--fl-center">
-        <div class="fl-bl-50" style="gap: 30px">
-            <img style="margin: 0; width: 150px" class="img--50" src="img/jest.png" alt="">
-            <p style="font-size: 100px; margin: 0">+</p>
-            <img style="margin: 0; width: 150px" class="img--50" src="img/octopus-128x128.png" alt="">
-        </div>
-    </section>
-
-    <section class="slide slide--not-top slide--fl-center">
-        <h1 class="title separate separate--pure">Как запускать тесты?</h1>
-    </section>
-
-    <section class="slide slide--not-top slide--fl-center">
-        <code>npm run jest</code>
-    </section>
-
-    <section class="slide slide--not-top slide--fl-center">
-        <img class="img--full" style="max-height: 90%;" src="img/test-run.png" alt="">
-    </section>
-
-    <section class="slide slide--not-top slide--fl-center">
-        <h1 class="title separate separate--pure">Как проверять coverage?</h1>
-    </section>
-
-    <section class="slide slide--not-top slide--fl-center">
-        <code>jest <mark class="important">--coverage</mark></code>
-    </section>
-
-    <section class="slide slide--not-top slide--fl-center">
-        <img class="img--full" style="max-height: 90%;" src="img/coverage.png" alt="">
-        <div class="spotlight next" style="
-            --spotlight-radius: 50%;
-            --spotlight-opacity: 0.2;
-            --spotlight-size: 99px;
-            --spotlight-top: 45px;
-            --spotlight-left: -68px;
-        "></div>
-
-        <div class="spotlight next" style="
-            --spotlight-radius: 50%;
-            --spotlight-opacity: 0.2;
-            --spotlight-size: 99px;
-            --spotlight-top: 45px;
-            --spotlight-left: 168px;
-        "></div>
-    </section>
-
-    <section class="slide slide--not-top slide--fl-center">
-        <h1 class="title separate separate--pure">Важно</h1>
-    </section>
-
-    <section class="slide slide--not-top slide--fl-center">
-        <img class="img--full" style="max-height: 90%;" src="img/ignore.png" alt="">
-    </section>
-
-    <section class="slide slide--not-top slide--fl-center">
-        <h1 class="title separate separate--pure">Testing Library в Pyrus</h1>
-    </section>
-
-    <section class="slide slide--not-top slide--fl-center">
-        <style>
-            .tomato::after {
-                border-bottom-color: tomato;
-            }
-        </style>
-        <div class="triangle tra tomato" >
-            <div class="triangle__text">e2e</div>
-        </div>
-    </section>
-
-    <section class="slide">
-        <h1 class="title title-slide separate">E2E tests</h1>
-        <div>
-            <p>Сквозное тестирование, оно же End-to-end или E2E, — это процесс тестирования, при котором происходит подробная эмуляция пользовательской среды.</p>
-        </div>
-    </section>
-
-    <section class="slide slide--fl-center">
-        <img class="img--full" style="width: 250px; filter: drop-shadow(0 0px 6px black);"  src="img/e2e.png" alt="">
-    </section>
-
-    <section class="slide slide--not-top slide--fl-center">
-        <h1 class="title separate separate--pure">Новое</h1>
-    </section>
-
-    <section class="slide slide--not-top slide--fl-center">
-        <img class="img--full" style="max-height: 90%;" src="img/fail.png" alt="">
-    </section>
-
-    <section class="slide slide--not-top slide--fl-center">
-        <img class="img--full" style="max-height: 90%;" src="img/mmock-flag.png" alt="">
-    </section>
-
-    <section class="slide slide--not-top slide--fl-center">
-        <h1 class="title separate separate--pure">Не тестируется другой кейс</h1>
-    </section>
-
-    <section class="slide slide--not-top slide--fl-center">
-        <img class="img--full" style="max-height: 90%;" src="img/utils.png" alt="">
-    </section>
-
-    <section class="slide slide--not-top slide--fl-center">
-        <img class="img--full" style="max-height: 90%;" src="img/utils-2.png" alt="">
-    </section>
-
-    <section class="slide slide--not-top slide--fl-center">
-        <h1 class="title separate separate--pure">TestCafe в Pyrus</h1>
+        <h1 class="title separate separate--pure">Gui tests</h1>
+        <ul>
+            <li>GuiTests/tests/calendar.ts</li>
+            <li>GuiTests/tests/register.ts</li>
+        </ul>
     </section>
 
     <section class="slide slide--not-top slide--fl-center">
@@ -405,6 +476,11 @@
 
     <section class="slide slide--not-top slide--fl-center">
         <img class="img--full" style="max-height: 90%;" src="img/snap.png" alt="">
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img class="img--full" style="max-width: 400px" src="img/sentry_logo.png" alt="">
+        <h2 style="color: white">🔄 9 => 26</h2>
     </section>
 
     <section class="slide">
