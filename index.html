@@ -41,10 +41,49 @@
         </ul>
     </section>
 
+    <section class="slide">
+        <style>
+            .cir {
+                width: 250px;
+                height: 250px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                background: tomato;
+                font-size: 45px;
+            }
+
+            .cir2 {
+                background: brown;
+                width: 230px;
+                height: 230px;
+            }
+        </style>
+        <h1>Неполезная статистика</h1>
+        <div class="fl-bl-50" style="text-align: center">
+            <div>
+                <div class="cir">21</div>
+                2021
+            </div>
+            <div>
+                <div class="cir cir2">19</div>
+                2022
+            </div>
+        </div>
+    </section>
+
+    <section class="slide slide--fl-center slide--not-top">
+        <h1 class="title title-slide separate">Sentry не показывает статистику за интервал 🤷‍</h1>
+    </section>
+
+    <section class="slide slide--fl-center">
+        <img class="img--full" style="width: 450px" src="img/mem-bag.jpeg" alt="">
+    </section>
+
     <section class="slide slide--not-top  slide--fl-center">
         <h1 class="title separate">Пирамида тестирования</h1>
     </section>
-
     <section class="slide slide--not-top slide--fl-center">
         <style>
             .triangle__item {
@@ -160,41 +199,6 @@
         </div>
     </section>
 
-    <section class="slide slide--fl-center slide--not-top">
-        <table style="font-size: 0.8em">
-            <tbody><tr>
-                <th scope="col"></th>
-                <th>Unit</th>
-                <th>Integration</th>
-                <th>E2E</th>
-            </tr>
-            <tr>
-                <th scope="row">Цель</th>
-                <td>Модуль в изоляции</td>
-                <td>Группа модулей</td>
-                <td>Система в целом</td>
-            </tr>
-            <tr>
-                <th scope="row">Библиотеки</th>
-                <td>Jest/Jasmine</td>
-                <td>Testing library/Enzyme</td>
-                <td>TestCafe/Puppeteer</td>
-            </tr>
-            <tr>
-                <th scope="row">Скорость</th>
-                <td>✅</td>
-                <td>✅</td>
-                <td>⌛️</td>
-            </tr>
-            <tr>
-                <th scope="row">Выполнение в TC</th>
-                <td>Build</td>
-                <td>Build</td>
-                <td>GuiTests</td>
-            </tr>
-            </tbody></table>
-    </section>
-
     <section class="slide slide--not-top slide--fl-center">
         <style>
             .triangle__text {
@@ -217,10 +221,8 @@
     </section>
 
     <section class="slide">
-        <h1 class="title title-slide separate">Что такое Unit-тестирование</h1>
+        <h1 class="title title-slide separate">Unit-тестирование</h1>
         <div>
-            <p>Unit–тестирование еще часто называют модульным. Это тип тестирования программного обеспечения, при котором тестируются отдельные модули или компоненты программного обеспечения.</p>
-
             <p>Цель этого тестирования состоит в том, чтобы убедиться, что каждая единица программного кода работает должным образом.</p>
         </div>
     </section>
@@ -230,7 +232,7 @@
     </section>
 
     <section class="slide" style="padding: 0">
-       <iframe style="width: 100%" height="100%" src="https://codesandbox.io/s/jest-playground-1h63g0?file=/src/sum.js"></iframe>
+       <iframe style="width: 100%" height="100%" src="https://codesandbox.io/s/jest-playground-1h63g0?file=/src/sum.test.js"></iframe>
     </section>
 
     <section class="slide slide--not-top slide--fl-center">
@@ -381,6 +383,41 @@
         <h1 class="title separate separate--pure">TestCafe в Pyrus</h1>
     </section>
 
+    <section class="slide slide--fl-center slide--not-top">
+        <table style="font-size: 0.8em">
+            <tbody><tr>
+                <th scope="col"></th>
+                <th>Unit</th>
+                <th>Integration</th>
+                <th>E2E</th>
+            </tr>
+            <tr>
+                <th scope="row">Цель</th>
+                <td>Модуль в изоляции</td>
+                <td>Группа модулей</td>
+                <td>Система в целом</td>
+            </tr>
+            <tr>
+                <th scope="row">Библиотеки</th>
+                <td>Jest/Jasmine</td>
+                <td>Testing library/Enzyme</td>
+                <td>TestCafe/Puppeteer</td>
+            </tr>
+            <tr>
+                <th scope="row">Скорость</th>
+                <td>✅</td>
+                <td>✅</td>
+                <td>⌛️</td>
+            </tr>
+            <tr>
+                <th scope="row">Выполнение в TC</th>
+                <td>Build</td>
+                <td>Build</td>
+                <td>GuiTests</td>
+            </tr>
+            </tbody></table>
+    </section>
+
     <section class="slide slide--not-top slide--fl-center">
         <h1 class="title separate separate--pure">Планы</h1>
     </section>
@@ -405,6 +442,11 @@
 
     <section class="slide slide--not-top slide--fl-center">
         <img class="img--full" style="max-height: 90%;" src="img/snap.png" alt="">
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img class="img--full" style="max-width: 400px" src="img/sentry_logo.png" alt="">
+        <h2 style="color: white">🔄 9 => 26</h2>
     </section>
 
     <section class="slide">
